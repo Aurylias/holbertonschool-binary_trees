@@ -15,6 +15,14 @@ void binary_tree_delete(binary_tree_t *tree)
 	post_order_traversal(tree);
 }
 
+/**
+* post_order_traversal - Use Post-order traversal to free all node of the tree
+*
+* @tree: A pointer to the root of the tree
+*
+* Return: None
+*/
+
 void post_order_traversal(binary_tree_t *tree)
 {
 	if (!tree)
