@@ -22,6 +22,9 @@ struct binary_trees_s
 };
 
 typedef struct binary_trees_s binary_trees_t;
+typedef struct binary_trees_s bst_t;
+typedef struct binary_trees_s avl_t;
+typedef struct binary_trees_s heap_t;
 
 binary_trees_t *binary_tree_node(binary_trees_t *parent, int value);
 
