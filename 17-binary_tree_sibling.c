@@ -8,7 +8,7 @@
 * Return: A pointeur to that sibling
 */
 
-binary_tree_t * binary_tree_sibling(binary_tree_t *node)
+binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (!node || !node->parent)
 		return (NULL);
