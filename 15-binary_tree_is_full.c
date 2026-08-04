@@ -31,14 +31,13 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 size_t nodes(const binary_tree_t *tree)
 {
-	size_t nodes = 0;
+	size_t node = 0;
 
 	if (!tree)
 		return (0);
 
 	if (tree->left || tree->right)
-		nodes = 1;
+		node = 1;
 
-	return (binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right)
-		+ nodes);
+	return (nodes(tree->left) + nodes(tree->right) + node);
 }
