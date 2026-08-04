@@ -36,7 +36,7 @@ size_t nodes(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-	if (tree->left || tree->right)
+	if ((tree->left && !tree->right) || (tree->right && !tree->left))
 		node = 1;
 
 	return (nodes(tree->left) + nodes(tree->right) + node);
