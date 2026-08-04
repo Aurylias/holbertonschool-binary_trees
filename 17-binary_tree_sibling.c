@@ -5,7 +5,7 @@
 *
 * @node: A pointeur to a node
 *
-* Return: A pointeur to that sibling
+* Return: A pointeur to that sibling, otherwise NULL
 */
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
