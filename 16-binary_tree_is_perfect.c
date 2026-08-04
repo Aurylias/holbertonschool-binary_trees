@@ -26,7 +26,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	n = size(tree);
 
 	for (i = 1; i < h - 1; i++)
-		power += 2 * i;
+		power *= 2 * i;
 
 	if (power == n)
 		return (1);
