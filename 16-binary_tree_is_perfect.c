@@ -15,9 +15,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int h, n, i;
 	int power = 0;
-	
+
 	if (!tree)
 		return (0);
+
+	if (!tree->left && !tree->right)
+		return (1);
 
 	h = height(tree);
 	n = size(tree);
